@@ -9,6 +9,8 @@ import java.util.List;
 @Service
 public class TodoService {
     private static List<Todo> todos = new ArrayList<>();
+
+    //adding to list
     static {
         todos.add(new Todo(
                 1,
