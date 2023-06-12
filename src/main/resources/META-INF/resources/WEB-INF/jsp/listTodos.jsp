@@ -1,9 +1,9 @@
 <html>
     <head>
-        <title>Welcome</title>
+        <title>List Todos Page</title>
     </head>
     <body>
         <div>Welcome inside!</div>
-        <div>name: ${name}</div>
+        <div>Your Todos are ${todos}</div>
     </body>
 </html>
