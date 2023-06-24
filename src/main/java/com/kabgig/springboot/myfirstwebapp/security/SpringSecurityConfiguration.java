@@ -15,10 +15,10 @@ public class SpringSecurityConfiguration {
 
     @Bean
     public InMemoryUserDetailsManager createUserDetailsManager(){
-        Function<String, String> passwordEncoder
+        Function<String, String> passEncodeFunction
                 = input -> passwordEncoder().encode(input);
         UserDetails userDetails = User.builder()
-                .passwordEncoder(passwordEncoder)
+                .passwordEncoder(passEncodeFunction)
                 .username("ansar")
                 .password("12345678")
                 .roles("USER", "ADMIN")
