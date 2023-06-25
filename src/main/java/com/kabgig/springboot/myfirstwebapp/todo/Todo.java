@@ -10,6 +10,9 @@ import java.time.LocalDate;
 
 @Entity
 public class Todo {
+    public Todo() {
+    }
+
     @Id
     @GeneratedValue
     private int id;
