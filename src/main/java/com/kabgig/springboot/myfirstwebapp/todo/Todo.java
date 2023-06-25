@@ -1,10 +1,17 @@
 package com.kabgig.springboot.myfirstwebapp.todo;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Size;
 
 import java.time.LocalDate;
 
+@Entity
 public class Todo {
+    @Id
+    @GeneratedValue
     private int id;
     private String username;
 
