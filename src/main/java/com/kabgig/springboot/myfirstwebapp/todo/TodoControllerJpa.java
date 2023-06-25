@@ -30,7 +30,6 @@ public class TodoControllerJpa {
     public String listAllTodos(ModelMap model) {
         String username = getLoggedInUsername(model);
         List<Todo> todos = todoRepository.findByUsername(username);
-      //  todoRepository
         model.addAttribute("todos", todos);
         return "listTodos";
     }
