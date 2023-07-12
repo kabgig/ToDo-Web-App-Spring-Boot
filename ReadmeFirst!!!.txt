@@ -5,4 +5,5 @@ docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=tod
 mvn clean spring-boot:run
 
 3 Go to http://localhost:8080/list-todos
-
+username: ansar
+password: 12345678
